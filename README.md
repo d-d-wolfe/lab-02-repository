@@ -30,6 +30,46 @@ Finish time: 9:00
 
 Actual time needed to complete: 55
 
+Number and name of feature: __Pagination__
+
+Estimate of time needed to complete: __45mins___
+
+Start time: __3:55pm___
+
+Finish time: __4:12___
+
+Actual time needed to complete: __17min___
+
+Number and name of feature: __Templating__
+
+Estimate of time needed to complete: __45mins___
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Number and name of feature: __Styling with Flexbox__
+
+Estimate of time needed to complete: __45mins___
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Number and name of feature: __Sort the images__
+
+Estimate of time needed to complete: __1hour___
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
 **Credits**
 
 Feature 1- Driver: Dave Wolfe
