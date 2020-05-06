@@ -24,11 +24,11 @@ Number and name of feature: __Style the app__
 
 Estimate of time needed to complete: __40___
 
-Start time: _____
+Start time: 8:05
 
-Finish time: _____
+Finish time: 9:00
 
-Actual time needed to complete: _____
+Actual time needed to complete: 55
 
 **Credits**
 
@@ -37,3 +37,6 @@ Feature 1- Driver: Dave Wolfe
 
 Feature 2- Driver: Dave Wolfe
            Navigator: Bade Habib
+
+Feature 3- Driver: Bade Habib
+           Navigator: Dave Wolfe
