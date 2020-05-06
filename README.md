@@ -14,11 +14,11 @@ Number and name of feature: __Filter Images__
 
 Estimate of time needed to complete: __35___
 
-Start time: _____
+Start time: _7:00____
 
-Finish time: _____
+Finish time: __7:50___
 
-Actual time needed to complete: _____
+Actual time needed to complete: __50min___
 
 Number and name of feature: __Style the app__
 
@@ -34,4 +34,6 @@ Actual time needed to complete: _____
 
 Feature 1- Driver: Dave Wolfe
            Navigator: Bade Habib
-            
+
+Feature 2- Driver: Dave Wolfe
+           Navigator: Bade Habib
