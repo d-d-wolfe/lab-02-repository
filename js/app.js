@@ -49,21 +49,49 @@ const filterByKeywords = (keyword) => {
   });
 };
 
+const sortByTitle = (arr) => {
+  arr.sort((a, b) => {
+    if(a.title > b.title) {
+      return 1;
+    } else if(a.title < b.title) {
+      return -1;
+    } else {
+      return 0;
+    }
+  })
+};
+
+const sortByHorns = (arr) => {
+  arr.sort((a, b) => {
+    if(a.horns > b.horns) {
+      return 1;
+    } else if(a.horns < b.horns) {
+      return -1;
+    } else {
+      return 0;
+    }
+  })
+};
+
 const navigateToPage = (pageNumber) => {
-  $.get('data/page-' + pageNumber + '.json', function (data) {
-    dropDown.off('change');
-    currentPhotos = [];
+  $.get('data/page-' + pageNumber[pageNumber.length - 1] + '.json', function (data) {
+    dropDown.off('change'); // Removes change event from drop-down menu
+    currentPhotos = []; // Empty out all photos
+
+    // Adds each photo from JSON into currentPhotos array
     data.forEach((photo) => {
       addToPhotos(photo);
-
     });
+    
+    sortByTitle(currentPhotos);
 
-    renderPhotos();
-    addKeywordsToDropdown();
+    renderPhotos(); // Renders all photos in currentPhotos to HTML
+    addKeywordsToDropdown();  // Adds keywords of all photos in currentPhotos to keyWords array
+
+    // Adds change event to drop-down menu that filters all photos displayed by keyword
     dropDown.on('change', (event) => {
       filterByKeywords(event.target.value);
     });
-
   });
 };
 
@@ -71,14 +99,24 @@ $('#pages').children().on('click', (event) => {
   navigateToPage(event.target.text);
 });
 
-navigateToPage(1);
+$('#title').on('click', (event) => {
+  sortByTitle(currentPhotos);
+  renderPhotos();
+});
 
-// get the select element by id 'filter'
-// create an option element with the value keyword
-// add an event that selects the element
-// clear innerhtml of main
-// foreach loop on the current photos
-// creates and appends phototemplate for photos that match keyword and renders them
+$('#horns').on('click', (event) => {
+  sortByHorns(currentPhotos);
+  console.log(currentPhotos);
+  renderPhotos();
+});
+
+navigateToPage('Page 1');  // Loads 1st page
+
+// FEATURE 4
+// 1. Sort by title on page-load
+//// a. Create button with click handler to sort by title
+// 2. Create button with click handler to sort by number of horns
+// 3. Create sort function that responds to click event
 
 
 

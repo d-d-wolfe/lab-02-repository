@@ -2,3 +2,33 @@ footer {
   height: 100px;
   width: 100%;
 }
+
+.photo-set {
+  max-width: 30%;
+  height: 300px;
+  flex-basis: 30%;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+#horns, #title {
+  border-radius: 15px;
+  background-color: royalblue;
+  color: antiquewhite;
+  height: 40px;
+}
+
+a {
+  margin-top: 10px;
+  height: 20px;
+}
+
+#filter {
+  margin-bottom: 15px;
+  background-color: antiquewhite;
+}
+
+option {
+  background-color: antiquewhite;
+}

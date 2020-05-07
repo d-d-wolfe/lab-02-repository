@@ -56,22 +56,23 @@ Estimate of time needed to complete: __45mins___
 
 Start time: 6:37 PM
 
-Finish time: _____
+Finish time: 6:50 PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 13 min
 
 Number and name of feature: __Sort the images__
 
 Estimate of time needed to complete: __1hour___
 
-Start time: _____
+Start time: 7:30 PM
 
-Finish time: _____
+Finish time: 8:08 PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 38 min
 
 **Credits**
 
+*Lab 2*
 Feature 1- Driver: Dave Wolfe
            Navigator: Bade Habib
 
@@ -79,4 +80,17 @@ Feature 2- Driver: Dave Wolfe
            Navigator: Bade Habib
 
 Feature 3- Driver: Bade Habib
+           Navigator: Dave Wolfe
+
+*Lab 3*
+Feature 1- Driver: Dave Wolfe
+           Navigator: Bade Habib
+
+Feature 2- Driver: Dave Wolfe
+           Navigator: Bade Habib
+
+Feature 3- Driver: Bade Habib
+           Navigator: Dave Wolfe
+
+Feature 4- Driver: Bade Habib
            Navigator: Dave Wolfe
