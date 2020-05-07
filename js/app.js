@@ -27,7 +27,7 @@ const renderPhotos = () => {
 };
 
 const addKeywordsToDropdown = () => {
-  
+
   currentPhotos.forEach(photo => {
     if (!keyWords.includes(photo.keyword)) {
       const dropDownEntry = $('<option></option>').attr('value', photo.keyword).text(photo.keyword);
@@ -51,26 +51,26 @@ const filterByKeywords = (keyword) => {
 
 const sortByTitle = (arr) => {
   arr.sort((a, b) => {
-    if(a.title > b.title) {
+    if (a.title > b.title) {
       return 1;
-    } else if(a.title < b.title) {
+    } else if (a.title < b.title) {
       return -1;
     } else {
       return 0;
     }
-  })
+  });
 };
 
 const sortByHorns = (arr) => {
   arr.sort((a, b) => {
-    if(a.horns > b.horns) {
+    if (a.horns > b.horns) {
       return 1;
-    } else if(a.horns < b.horns) {
+    } else if (a.horns < b.horns) {
       return -1;
     } else {
       return 0;
     }
-  })
+  });
 };
 
 const navigateToPage = (pageNumber) => {
@@ -82,11 +82,11 @@ const navigateToPage = (pageNumber) => {
     data.forEach((photo) => {
       addToPhotos(photo);
     });
-    
+
     sortByTitle(currentPhotos);
 
     renderPhotos(); // Renders all photos in currentPhotos to HTML
-    addKeywordsToDropdown();  // Adds keywords of all photos in currentPhotos to keyWords array
+    addKeywordsToDropdown(); // Adds keywords of all photos in currentPhotos to keyWords array
 
     // Adds change event to drop-down menu that filters all photos displayed by keyword
     dropDown.on('change', (event) => {
@@ -110,7 +110,7 @@ $('#horns').on('click', (event) => {
   renderPhotos();
 });
 
-navigateToPage('Page 1');  // Loads 1st page
+navigateToPage('Page 1'); // Loads 1st page
 
 // FEATURE 4
 // 1. Sort by title on page-load
