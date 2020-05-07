@@ -1,9 +1,10 @@
+/*global Handlebars, $ */
 'use strict';
 
 let currentPhotos = [];
 let dropDown = $('#filter');
-const $photoTemp = $('#photo-template').clone();
-$photoTemp.attr('id', '');
+const photoTemplate = Handlebars.compile($('#photo-template').html());
+const keyWords = [];
 
 function Photo(image_url, title, description, keyword, horns) {
   this.image_url = image_url;
@@ -20,16 +21,13 @@ const addToPhotos = (photo) => {
 const renderPhotos = () => {
   $('main').empty();
   currentPhotos.forEach((photo) => {
-    const photoTemplate = $photoTemp.clone();
-    photoTemplate.find('h2').text(photo.title);
-    photoTemplate.find('p').text(photo.description);
-    photoTemplate.find('img').attr('src', photo.image_url);
-    $('main').append(photoTemplate);
+    const result = photoTemplate(photo);
+    $('main').append(result);
   });
 };
 
 const addKeywordsToDropdown = () => {
-  let keyWords = [];
+  
   currentPhotos.forEach(photo => {
     if (!keyWords.includes(photo.keyword)) {
       const dropDownEntry = $('<option></option>').attr('value', photo.keyword).text(photo.keyword);
@@ -45,11 +43,8 @@ const filterByKeywords = (keyword) => {
   $('main').empty();
   currentPhotos.forEach(photo => {
     if (photo.keyword === keyword) {
-      const photoTemplate = $photoTemp.clone();
-      photoTemplate.find('h2').text(photo.title);
-      photoTemplate.find('p').text(photo.description);
-      photoTemplate.find('img').attr('src', photo.image_url);
-      $('main').append(photoTemplate);
+      const result = photoTemplate(photo);
+      $('main').append(result);
     }
   });
 };
