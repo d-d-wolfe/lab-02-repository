@@ -44,11 +44,11 @@ Number and name of feature: __Templating__
 
 Estimate of time needed to complete: __45mins___
 
-Start time: _____
+Start time: __4:45pm___
 
-Finish time: _____
+Finish time: __5:05pm___
 
-Actual time needed to complete: _____
+Actual time needed to complete: _20min__
 
 Number and name of feature: __Styling with Flexbox__
 
