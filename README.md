@@ -54,7 +54,7 @@ Number and name of feature: __Styling with Flexbox__
 
 Estimate of time needed to complete: __45mins___
 
-Start time: _____
+Start time: 6:37 PM
 
 Finish time: _____
 
